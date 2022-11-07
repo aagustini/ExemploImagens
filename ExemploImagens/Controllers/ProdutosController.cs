@@ -153,7 +153,7 @@ namespace ExemploImagens.Controllers
         }
 
 
-        public ActionResult GetImage(int id)
+        public IActionResult GetImage(int id)
         {
             Imagem im = _context.Imagem.Find(id);
             if (im != null)
